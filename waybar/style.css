@@ -1,0 +1,92 @@
+/* Catppuccin Frappé Palette */
+@define-color base   #303446;
+@define-color mantle #292c3c;
+@define-color crust  #232634;
+@define-color text   #c6d0f5;
+@define-color blue   #8caaee;
+@define-color lavender #babbf1;
+@define-color sapphire #85c1dc;
+@define-color teal   #81c8be;
+@define-color green  #a6d189;
+@define-color yellow #e5c890;
+@define-color peach  #ef9f76;
+@define-color maroon #ea999c;
+@define-color red    #e78284;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: @base;
+    color: @text;
+    border-bottom: 2px solid @mantle;
+}
+
+/* Khung nền chung cho toàn bộ workspace */
+#workspaces {
+    background-color: @mantle;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 2px;
+}
+
+/* Các button bên trong workspace */
+#workspaces button {
+    padding: 0 10px;
+    color: @text;
+    background-color: transparent;
+    border-radius: 8px; /* Bo tròn từng nút */
+    margin: 0 2px;
+}
+
+/* Khi di chuột vào */
+#workspaces button:hover {
+    background-color: @surface0;
+    color: @blue;
+}
+
+/* Khi workspace đang được FOCUSED (Màu hồng Flamingo) */
+#workspaces button.active, 
+#workspaces button.focused {
+    background-color: #f2cdcd; /* Màu Flamingo của Catppuccin */
+    color: @base;
+    font-weight: bold;
+}
+
+/* Workspace có cửa sổ đang cần chú ý (nếu có) */
+#workspaces button.urgent {
+    background-color: @red;
+    color: @base;
+}
+
+#clock, #battery, #cpu, #memory, #backlight, #network, #pulseaudio, #tray, #mode, #scratchpad, #keyboard-state {
+    padding: 0 10px;
+    margin: 4px 2px;
+    color: @base;
+    border-radius: 8px;
+}
+
+#clock { background-color: @blue; font-weight: bold; }
+#battery { background-color: @green; }
+#battery.critical:not(.charging) { background-color: @red; color: @text; }
+#network { background-color: @teal; }
+#pulseaudio { background-color: @sapphire; }
+#backlight { background-color: @yellow; }
+#tray { background-color: @mantle; color: @text; }
+#mode { background-color: @peach; }
+#scratchpad { background-color: @lavender; }
+#keyboard-state { background-color: @maroon; }
+
+#pulseaudio.muted {
+    background-color: @mantle;
+    color: @red;
+}
+
+#window {
+    color: @text;
+    font-weight: bold;
+}
