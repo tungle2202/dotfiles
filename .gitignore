@@ -1,0 +1,11 @@
+autostart/
+dconf/
+environment.d/
+fcitx/
+fcitx5/
+go/
+gtk-3.0/
+ibus/
+mozilla
+pulse/
+pavucontrol.ini
