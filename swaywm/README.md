@@ -9,7 +9,8 @@ Make sure you have these installed:
 - **Fonts:** JetBrainsMono Nerd Font
 - **Terminal:** Alacritty
 
-> You can replace 'look'(lookapp) and 'alacritty' with any launcher you like,
+> You can replace 'look'(lookapp) and 'alacritty' with any launcher or terminal
+emulator you like,
 just remember to change the sway config file
 
 ## **Prerequisite season 2:**
