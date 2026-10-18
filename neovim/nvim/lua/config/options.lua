@@ -94,7 +94,7 @@ opt.ruler = false -- Disable the default ruler
 opt.scrolloff = 4 -- Lines of context
 opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp", "folds" }
 opt.shiftround = true -- Round indent
-opt.shiftwidth = 4 -- Size of an indent
+opt.shiftwidth = 2 -- Size of an indent
 opt.shortmess:append({ W = true, I = true, c = true, C = true })
 opt.showmode = false -- Dont show mode since we have a statusline
 opt.sidescrolloff = 8 -- Columns of context
@@ -107,9 +107,8 @@ opt.splitbelow = true -- Put new windows below current
 opt.splitkeep = "screen"
 opt.splitright = true -- Put new windows right of current
 vim.opt.statuscolumn = "%=%{v:lnum == line('.') ? v:lnum : ' '} %{v:relnum == 0 ? ' ' : v:relnum}|  "
-opt.tabstop = 4 -- Number of spaces tabs count for
-opt.softtabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2 -- Number of spaces tabs count for
+opt.softtabstop = 2
 opt.expandtab = true
 opt.termguicolors = true -- True color support
 opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
@@ -120,7 +119,7 @@ opt.virtualedit = "block" -- Allow cursor to move where there is no text in visu
 opt.wildmode = "longest:full,full" -- Command-line completion mode
 opt.winminwidth = 5 -- Minimum window width
 opt.wrap = false -- Disable line wrap
-opt.colorcolumn = "120"
+opt.colorcolumn = "80"
 -- Fix markdown indentation settings
 --
 vim.g.markdown_recommended_style = 0
