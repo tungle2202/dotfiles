@@ -11,7 +11,7 @@ Make sure your have these installed:
 
 ## **How to apply the config:**
 
-Make themselves home, oh wait, I mean, get them to their places:
+Get them to their places:
 
 ```sh
 cp -r ./alacritty/ ~/.config/
@@ -22,7 +22,4 @@ cp -r ./alacritty/ ~/.config/
 Since this is tuned specifically for my own workflow, font sizes, and aesthetic
 preferences, it might look weird or throw parsing errors if your Alacritty
 version doesn't support TOML configuration yet (make sure your Alacritty is
-relatively up to date). If you just don't like how it looks, I hate you, you
-don't have to be rude, just keep it to yourself, dude.
-
-**For any further problems:** RTFM
+relatively up to date).

@@ -92,6 +92,3 @@ cp ./.p10k.zsh ~/.p10k.zsh
 in your zsh, it might be font problem, check the terminal emulator preferences.
 - **Customization:** type p10k configure anytime if you want to return the
 wizard and change your prompt style.
-
-**For anything else:** (There's Mastercard)
-Visit Reddit and Arch Forum, or just RTFM

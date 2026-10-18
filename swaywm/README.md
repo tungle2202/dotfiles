@@ -25,19 +25,14 @@ If you use a different terminal emulator or network tool, it will throw a tantru
 - **Theme & Fonts:** It uses the **Catppuccin Frappé** palette and expects
 `JetBrainsMono Nerd Font` to be installed. Ignore it if you prefer tofu boxes.
 
-Some utilities listed in sway config are not even installed in my own system
+Some utilities listed in sway config are not even installed in my own system.
 It was default config, idk, you can ignore them if you don't get any problems.
 
 ## **How to apply the config:**
 
-Just copy the configs into their place, lol:
+Just copy the configs into their place:
 
 ```sh
 cp -r ./sway/ ~/.config/
 cp -r ./waybar/ ~/.config/
 ```
-
-## **For any further problems that weren't presented:**
-
-Please ask AIs, or some random loonix nerds on Arch Forum or Reddit
-Or much more simple: RTFM (Gave you a shortcut)

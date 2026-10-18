@@ -151,7 +151,7 @@ Once you have completed the Prerequisites, drop my configs into their places:
 
 ### 1. Copy the configuration
 
-Execute this from the `neovim/` directory inside this dotfiles repository:
+Execute this:
 
 ```sh
 cp -r ./nvim ~/.config/nvim
@@ -169,7 +169,6 @@ nvim
 (LazyVim, Catppuccin, LSP extras, etc.).
 - Treesitter will compile all syntax parsers.
 - Wait a minute or two until all installation bars complete.
-- Press `q` to close the Lazy dashboard.
 
 ## Disclaimer
 
@@ -187,7 +186,3 @@ install additional ones.
 available shortcuts.
 - **Diagnostics check:** Run `:checkhealth` anytime to diagnose any system or
 plugin issues.
-
-**For anything else:**
-Visit Reddit and Arch Forum, check the [LazyVim Docs](https://www.lazyvim.org),
-or just RTFM
