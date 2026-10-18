@@ -31,6 +31,6 @@ Follow instructions in each directory for which part you want to apply.
 - Everything here is heavily hard-coded for *my* specific system and workflow.
 If you clone and apply this whole thing blindly, it's not my fault.
 - Everything currently works fine on my system, if they don't on yours, try to
-figure it our yourself. Ask AIs, Reddit, Arch Forums, or as always: RTFM <(")
+figure it out yourself. Ask AIs, Reddit, Arch Forums, or as always: RTFM <(")
 
 Have fun, or don't. Who am i to make such a request :(
