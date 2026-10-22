@@ -1,0 +1,18 @@
+# Import theme Catppuccin Frappe
+include catppuccin-frappe.conf
+
+# Font
+font_family      JetBrainsMono Nerd Font
+font_size        14.0
+
+# Window
+window_padding_width  12
+background_opacity    0.95
+background_blur       32
+
+# Cursor
+cursor_shape          block
+cursor_blink_interval 0.5
+
+# Env
+env TERM=xterm-256color
