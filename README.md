@@ -1,6 +1,7 @@
 # My Dotfiles
 
-> A collection of configuration files that I'm using on my linux system
+> Wallpaper from [this repo](https://github.com/harilvfs/wallpapers)
+> A collection of configuration files that I'm using on my linux system. It's pretty basic and lame, I'm not a 'ricer', please don't roast me.
 
 ## The stack
 
