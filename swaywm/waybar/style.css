@@ -21,25 +21,24 @@
 }
 
 window#waybar {
-    background-color: @base;
+    background-color: transparent;
     color: @text;
-    border-bottom: 2px solid @mantle;
 }
 
 /* Khung nền chung cho toàn bộ workspace */
 #workspaces {
     background-color: @mantle;
-    border-radius: 10px;
-    margin: 4px;
-    padding: 2px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    padding: 2px 4px;
 }
 
 /* Các button bên trong workspace */
 #workspaces button {
-    padding: 0 10px;
-    color: @text;
+    padding: 0 8px;
+    color: @subtext0;
     background-color: transparent;
-    border-radius: 8px; /* Bo tròn từng nút */
+    border-radius: 6px;
     margin: 0 2px;
 }
 
@@ -63,30 +62,111 @@ window#waybar {
     color: @base;
 }
 
-#clock, #battery, #cpu, #memory, #backlight, #network, #pulseaudio, #tray, #mode, #scratchpad, #keyboard-state {
+#mode, #scratchpad {
+    background-color: @mantle;
     padding: 0 10px;
     margin: 4px 2px;
-    color: @base;
     border-radius: 8px;
 }
 
-#clock { background-color: @blue; font-weight: bold; }
-#battery { background-color: @green; }
-#battery.critical:not(.charging) { background-color: @red; color: @text; }
-#network { background-color: @teal; }
-#pulseaudio { background-color: @sapphire; }
-#backlight { background-color: @yellow; }
-#tray { background-color: @mantle; color: @text; }
-#mode { background-color: @peach; }
-#scratchpad { background-color: @lavender; }
-#keyboard-state { background-color: @maroon; }
+#mode { color: @peach; }
+#scratchpad { color: @lavender; }
 
-#pulseaudio.muted {
-    background-color: @mantle;
-    color: @red;
-}
-
+/* Module sway/window */
 #window {
+    background-color: @mantle;
+    border-radius: 8px;
+    margin: 4px 2px;
+    padding: 2px 12px;
     color: @text;
     font-weight: bold;
 }
+
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+/* Module ở giữa: Clock */
+#clock { 
+    background-color: @mantle;
+    border-radius: 8px;
+    margin: 4px 2px;
+    padding: 0 14px;
+    color: @blue;
+    font-weight: bold;
+}
+
+/* Khung nền chung cho modules-right (group/hardware) */
+#hardware,
+.hardware,
+.modules-right > widget > box {
+    background-color: @mantle;
+    border-radius: 8px;
+    margin: 4px 2px;
+    padding: 2px 4px;
+}
+
+.modules-right {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#hardware #tray,
+#hardware #pulseaudio,
+#hardware #backlight,
+#hardware #network,
+#hardware #keyboard-state,
+#hardware #battery,
+.modules-right #tray,
+.modules-right #pulseaudio,
+.modules-right #backlight,
+.modules-right #network,
+.modules-right #keyboard-state,
+.modules-right #battery {
+    background-color: transparent;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#tray {
+    color: @text;
+}
+
+#pulseaudio {
+    color: @sapphire;
+}
+
+#pulseaudio.muted {
+    background-color: transparent;
+    color: @red;
+}
+
+#backlight {
+    color: @yellow;
+}
+
+#network {
+    color: @teal;
+}
+
+#network.disconnected {
+    background-color: transparent;
+    color: @red;
+}
+
+#keyboard-state {
+    color: @maroon;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: @red;
+}
+

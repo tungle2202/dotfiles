@@ -1,5 +1,7 @@
 # swaywm configuration
 
+> Wallpaper from [this repo](https://github.com/harilvfs/wallpapers)
+
 ## **Prerequisite:**
 
 Make sure you have these installed:
