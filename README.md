@@ -6,12 +6,18 @@
 
 What do I use on my setup:
 
-- **Window manager:** [SwayWM](./swaywm/sway/)
-- **Status Bar:** [Waybar](./swaywm/waybar/)
-- **Terminal:** [Alacritty](./Terminal/)
+- **Window manager:** [swaywm](./swaywm/sway/)
+- **Status Bar:** [waybar](./swaywm/waybar/)
+- **Terminal:** [kitty](./Terminal/)
 - **Shell:** [zsh](./zsh/)
-- **Editor:** [Neovim](./nvim/)
+- **Editor:** [neovim](./nvim/)
 - **Launcher:** [look](https://github.com/kunkka19xx/look)
+
+## Preview 
+
+![Overview](./screenshot/screenshot1.png)
+![zsh and terminal](./screenshot/screenshot2.png)
+![neovim](./screenshot/screenshot3.png)
 
 ## Common prerequisites
 
