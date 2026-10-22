@@ -1,17 +1,25 @@
 /* Catppuccin Frappé Palette */
-@define-color base   #303446;
-@define-color mantle #292c3c;
-@define-color crust  #232634;
-@define-color text   #c6d0f5;
-@define-color blue   #8caaee;
-@define-color lavender #babbf1;
-@define-color sapphire #85c1dc;
-@define-color teal   #81c8be;
-@define-color green  #a6d189;
-@define-color yellow #e5c890;
-@define-color peach  #ef9f76;
-@define-color maroon #ea999c;
-@define-color red    #e78284;
+@define-color base      #303446;
+@define-color mantle    #292c3c;
+@define-color crust     #232634;
+@define-color surface0  #414559;
+@define-color surface1  #51576d;
+@define-color surface2  #626880;
+@define-color overlay0  #737994;
+@define-color subtext0  #a5adce;
+@define-color subtext1  #b5bfe2;
+@define-color text      #c6d0f5;
+@define-color blue      #8caaee;
+@define-color lavender  #babbf1;
+@define-color sapphire  #85c1dc;
+@define-color teal      #81c8be;
+@define-color green     #a6d189;
+@define-color yellow    #e5c890;
+@define-color peach     #ef9f76;
+@define-color maroon    #ea999c;
+@define-color red       #e78284;
+@define-color flamingo  #eebebe;
+@define-color rosewater #f2d5cf;
 
 * {
     font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
@@ -25,7 +33,6 @@ window#waybar {
     color: @text;
 }
 
-/* Khung nền chung cho toàn bộ workspace */
 #workspaces {
     background-color: @mantle;
     border-radius: 8px;
@@ -33,7 +40,6 @@ window#waybar {
     padding: 2px 4px;
 }
 
-/* Các button bên trong workspace */
 #workspaces button {
     padding: 0 8px;
     color: @subtext0;
@@ -42,13 +48,11 @@ window#waybar {
     margin: 0 2px;
 }
 
-/* Khi di chuột vào */
 #workspaces button:hover {
     background-color: @surface0;
     color: @blue;
 }
 
-/* Khi workspace đang được FOCUSED (Màu hồng Flamingo) */
 #workspaces button.active, 
 #workspaces button.focused {
     background-color: #f2cdcd; /* Màu Flamingo của Catppuccin */
@@ -56,7 +60,6 @@ window#waybar {
     font-weight: bold;
 }
 
-/* Workspace có cửa sổ đang cần chú ý (nếu có) */
 #workspaces button.urgent {
     background-color: @red;
     color: @base;
@@ -72,7 +75,6 @@ window#waybar {
 #mode { color: @peach; }
 #scratchpad { color: @lavender; }
 
-/* Module sway/window */
 #window {
     background-color: @mantle;
     border-radius: 8px;
@@ -88,7 +90,6 @@ window#waybar.empty #window {
     margin: 0;
 }
 
-/* Module ở giữa: Clock */
 #clock { 
     background-color: @mantle;
     border-radius: 8px;
@@ -98,7 +99,6 @@ window#waybar.empty #window {
     font-weight: bold;
 }
 
-/* Khung nền chung cho modules-right (group/hardware) */
 #hardware,
 .hardware,
 .modules-right > widget > box {
@@ -129,6 +129,24 @@ window#waybar.empty #window {
     background-color: transparent;
     padding: 0 8px;
     margin: 0 2px;
+    border-radius: 6px;
+    transition: background-color 0.15s ease;
+}
+
+#hardware #tray:hover,
+#hardware #pulseaudio:hover,
+#hardware #backlight:hover,
+#hardware #network:hover,
+#hardware #keyboard-state:hover,
+#hardware #battery:hover,
+.modules-right #tray:hover,
+.modules-right #pulseaudio:hover,
+.modules-right #backlight:hover,
+.modules-right #network:hover,
+.modules-right #keyboard-state:hover,
+.modules-right #battery:hover {
+    background-color: @surface0;
+    font-weight: bold;
 }
 
 #tray {
@@ -168,5 +186,25 @@ window#waybar.empty #window {
 #battery.critical:not(.charging) {
     background-color: transparent;
     color: @red;
+}
+
+menu {
+    background-color: @mantle;
+    border-radius: 8px;
+    border: 1px solid @surface0;
+    padding: 4px;
+    color: @text;
+}
+
+menuitem {
+    border-radius: 6px;
+    padding: 6px 14px;
+    margin: 2px 0;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+menuitem:hover {
+    background-color: @surface0;
+    color: @blue;
 }
 
